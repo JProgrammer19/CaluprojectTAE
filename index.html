@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CALCULADORA-TAE</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    -->
+  </head>
+  <body>
+    <div class="container">
+      <p class="h1 text-center">CALCULADORA TAE%</p><br>
+
+      <div class="row" style="background-color:#f2f2f2;">
+
+        <div class="col-sm">
+            <div class="col-sm">Capital (€)</div>
+              <div class="col-sm"><input class="ml-1" type="number" id="capital" value="0"></div>
+        </div><br>
+        <div class="col-sm">
+            <div class="col-sm">Interes Cuenta (%)</div>
+            <div class="col-sm"><input class="ml-1" type="number" id="interes" value="0" step=0.01></div>
+        </div><br>
+        <div class="col-sm">
+            <div class="col-sm">Tiempo (días)</div>
+            <div class="col-sm"><input class="ml-1" type="number" id="tiempo" value="0"></div>
+        </div><br>
+        <div class="col-sm">
+            <div class="col-sm">Interes Impuesto (%) (€)</div>
+            <div class="col-sm"><input class="ml-1" type="number" id="interesImpuesto" value="0"></div>
+        </div><br>
+        <div class="col-sm"><br>
+            <div class="col-sm"><button type="button" class="btn btn-info btn-sm" onclick="calculoTae();">Calcular</button></div><br>
+            <div class="col-sm">Neto: <span id="resultadoTae" border="1" class="text-success"></span></div>
+        </div>
+
+      </div>
+      <footer class="bg-dark text-white fixed-bottom text-center p-3">Calculadora TAE%</footer>
+  </div>
+    <!-- Optional Javascript -->
+    <!--
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    -->
+    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
